@@ -99,6 +99,7 @@ body {
 }
 
 .hero-content h1 {
+    margin-bottom: 20px;
     color: #ffffff;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: clamp(48px, 6.3vw, 76px);
@@ -110,7 +111,7 @@ body {
 
 .hero-content p {
     max-width: 310px;
-    margin-top: 8px;
+    margin-top: 0;
     color: #e8f6ff;
     font-size: 14px;
     font-weight: 300;
@@ -533,7 +534,7 @@ body {
     }
 
     .hero-content p {
-        margin-top: 8px;
+        margin-top: 0;
         font-size: 12px;
     }
 
