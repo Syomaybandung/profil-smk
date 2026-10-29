@@ -9,9 +9,16 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     background: #102a43;
     color: #ffffff;
+}
+
+img,
+iframe {
+    display: block;
+    max-width: 100%;
 }
 
 /* BAGIAN UTAMA */
@@ -489,6 +496,7 @@ body {
 }
 
 @media (min-width: 761px) and (max-width: 1050px) {
+    .cards-grid,
     .achievement-grid,
     .program-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -509,8 +517,10 @@ body {
     }
 
     .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
         padding: 18px 5%;
-        align-items: center;
     }
 
     .logo {
@@ -518,7 +528,10 @@ body {
     }
 
     .nav-links {
-        gap: clamp(6px, 2vw, 13px);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        width: 100%;
         padding-top: 0;
     }
 
@@ -527,9 +540,11 @@ body {
     }
 
     .hero-content {
-        top: 50%;
+        top: 56%;
         left: 5%;
         right: 4%;
+        max-width: 90%;
+        text-align: center;
     }
 
     .hero-content h1 {
@@ -539,6 +554,7 @@ body {
     }
 
     .hero-content p {
+        max-width: 100%;
         margin-top: 0;
         font-size: 12px;
     }
@@ -554,6 +570,10 @@ body {
 
     .vision-card p {
         font-size: 16px;
+    }
+
+    .program-card h3 {
+        min-height: auto;
     }
 }
 
